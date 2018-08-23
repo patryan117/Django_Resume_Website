@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h2>Peter DiMaria Terms of Service and Privacy Policy</h2>
+            <div class="col-xs-10 col-xs-offset-1">
+                {{ privacy_policy.privacy_policy|safe }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

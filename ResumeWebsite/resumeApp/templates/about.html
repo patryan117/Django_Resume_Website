@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h2>About Peter DiMaria</h2><br />
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="hidden-xs">
+                    <a href="https://www.linkedin.com/in/peter-dimaria-49151864/" target="_blank">
+                        <img src="{% static 'img/peter_dimaria_profile_pic.jpg' %}" width="200" align="right" alt="LinkedIn Profile - Peter DiMaria" hspace="5">
+                    </a>
+                </div>
+                <span style="font-size: large">{{ about.about|safe }}</span>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
